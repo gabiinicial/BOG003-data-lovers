@@ -1,24 +1,42 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header class="initial">
-        <img class="logo"src="./imagenes/Logo.png" alt="logo">
-      <button id="btngo" class="menuj"type="button">Inicio</button>
-      <button id="btnapp" class="menuapp"type="button">Descarga la APP</button>
-      <button id="btnhome" class="menuhome"type="button">¿Cómo jugar?</button>
-    </header>
-    <main>
-      <div class="mains">
-      <img class="fondo" src="./imagenes/Fondo.JPG" alt="fondo">
-      <h1 class="welcome">Bienvenidos Jugadores</h1>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="mobile.css" />
+  <link rel="stylesheet" media="(min-width:768px)" href="tablet.css" />
+  <link rel="stylesheet" media="(min-width:1024px)" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="initial">
+    <img class="logo" src="./imagenes/Logo.png" alt="logo">
+    <button id="btngo" class="menuhome" type="button">Inicio</button>
+    <button id="btnapp" class="menuapp" type="button">Descarga la APP</button>
+    <button id="btnj" class="menuj" type="button">¿Cómo jugar?</button>
+  </header>
+  <main>
+    <div class="mains">
+      <img class="fund" src="imagenes/Fondo.png" alt="Fondo">
+      <h1 class="welcome">Bienvenidos<br>Jugadores</h1>
+      <p class="description">En esta página disfrutaras de todo nuestro contenido basado en las características y
+        destrezas de cada Pokémon
+        con una amplia variedad para que puedas escoger el más adecuado para tu batalla Pokémon.</p>
     </div>
-    </main>
-    <footer></footer>
-    <div id="root"></div>
-    <script src="main.js" type="module"></script>
-  </body>
+  </main>
+  <footer>
+    <div class="networks">
+    <h2 class="foot">Siguenos en nuestras redes</h2>
+      <img src="imagenes/instagram.png" alt="instagram">
+      <img src="imagenes/youtube.png" alt="youtube">
+      <img src="imagenes/face.png" alt="facebook">
+    </div>
+  </footer>
+  <div id="root"></div>
+  <script src="main.js" type="module"></script>
+</body>
+
 </html>
