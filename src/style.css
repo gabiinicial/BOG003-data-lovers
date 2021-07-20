@@ -5,7 +5,7 @@
 
 }
 main{
-  overflow: visible;
+  overflow: visible ;
 }
 
 .initial {
@@ -85,8 +85,7 @@ main{
   box-shadow: 0 1em 1em 0 #9CD9F3, 0 17px 50px 0 #9CD9F3;
 }
 
-.fund {
- 
+.fund { 
  object-fit: cover;
   width: 100%;
   height: 100vh;
@@ -296,8 +295,43 @@ main{
     }
   }
   .fund2{
-    object-fit: cover;
-    width: 100%;
-    height: 100vh;
-    opacity: 40%;
+  position:relative;  
+  object-fit: cover;
+  width: 100%;
+  height: 100vh;
+  opacity: 40%;
+  }
+  .list{
+    position:absolute;
+    top: 20%;
+    left: 15%;
+    right: 15%;
+    font-family:'Nunito';
+    font-size: 1.5 rem;
+    text-align: center;
+    color: #06204C;
+  }
+  .order{
+    position:absolute;
+    top: 35%;
+    float:left;
+    left:20% ;
+  }
+  #type{
+    position:absolute;
+    top: 39%;
+    display: flex;
+    left: 23% ;
+  }
+  .az{
+    position:absolute;
+    top: 35%;
+    float:right;
+    right: 20%;
+  }
+  #alfabet{
+    position:absolute;
+    top: 39%;
+    display: flex;
+    right: 23%;
   }
