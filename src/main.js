@@ -11,9 +11,7 @@ document.getElementById("btnapp").addEventListener("click", () => {
 })
 document.getElementById("btnj").addEventListener("click", () => {
     location.href = "https://pokemongolive.com/es/play-where-you-are/";
-
 })
-
 //Boton de Pokebola/
 document.getElementById("poke").addEventListener("click", () => {
     document.getElementById('page1').style.display = 'none';

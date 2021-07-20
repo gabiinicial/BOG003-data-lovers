@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1"/> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <header class="initial">
+  <header class="initial">
     <img class="logo" src="./imagenes/Logo.png" alt="logo">
     <button id="btngo" class="menuhome" type="button">Inicio</button>
     <button id="btnapp" class="menuapp" type="button">Descarga la APP</button>
@@ -21,16 +21,34 @@
     <section>
       <div id="page1" class="mains">
         <img class="fund" src="imagenes/Fondo.png" alt="Fondo">
-        <h1 class="welcome">Bienvenidos<br>Jugadores</h1>
+        <h1 class="welcome">¡Bienvenidos<br>Jugadores!</h1>
         <p class="description">En esta página disfrutaras de todo nuestro contenido basado en las características y
           destrezas de cada Pokémon
-          con una amplia variedad para que puedas escoger el más adecuado para tu batalla Pokémon.</p>
+          con una amplia variedad, asi puedas escoger el más adecuado para tu batalla Pokémon.</p>
         <img id="poke" class="pokeball" src="./imagenes/Pokeball.png" alt="Pokeball">
       </div>
-<div id="page2" hidden>
-  <img class="fund2" src="imagenes/Fondo2.png" alt="Fondo2">
-</div>
     </section>
+    <section>  
+      <div id="page2" hidden>
+        <img class="fund2" src="imagenes/Fondo2.png" alt="Fondo2">
+        <h2 class="list">En esta sección encontraras una lista de Pokémon de la región de Johto y Kanto, con su respectiva
+          descripción</h2>
+          <h3 class="order">Ordenar según Tipo:</h3>
+          <select name="type" id="type">
+            <option>Tipo</option>
+            <option value="normal" id="normal">Normal</option>
+            <option value="grass" id="grass">Hierba</option>
+            <option value="fire" id="fire">Fuego</option>
+          </select>
+          <h3 class="az">Orden Alfabético:</h3>
+          <select name="alfabet" id="alfabet">
+            <option>Alfabético</option>
+            <option value="order1" id="order1">A-Z</option>
+            <option value="order2" id="order2">Z-A</option>
+          </select>
+       </div>
+    </section>
+    </div>
   </main>
   <footer>
     <h2 class="foot">Siguenos en nuestras redes</h2>
@@ -42,7 +60,7 @@
       <img src="imagenes/face.png" alt="facebook">
     </div>
   </footer>
-</div>
+  </div>
   <div id="root"></div>
   <script src="main.js" type="module"></script>
 </body>
