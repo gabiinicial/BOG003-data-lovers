@@ -2,6 +2,10 @@
   box-sizing: border-box;
   margin:0;
   padding: 0;
+
+}
+main{
+  overflow: visible;
 }
 
 .initial {
@@ -109,11 +113,11 @@
 
 .description {
   position: absolute;
-  top: 35%;
+  top: 38%;
   left: 30%;
   right: 28%;
   font-family: "Nunito";
-  font-size: 1.8em;
+  font-size: 1.5em;
   color: #061D2A;
   text-align: center;
   background-color: #96c9de94;
@@ -139,11 +143,11 @@
   position: absolute;
   top:75%;
   left: 46%;
-  height: 8em;
-  width: 8em;
+  height: 7em;
+  width: 7em;
 }
 /*Media Queries 699PX a 900PX*/  
-  @media screen and (min-width:700px) and (max-width:960px) and (min-device-height: 516px) and (max-device-height:1024px){
+  @media screen and (min-width:700px) and (max-width:960px) and (min-device-height: 500px) and (max-device-height:900px){
   .initial{
     width: auto;
     }
@@ -188,7 +192,7 @@
 }
 }
 /* Media Queries pantalla 400PX a 699PX*/
-@media screen and (min-width:400px) and (max-width:700px) and (max-device-height:640px) and (max-device-height:1024px){
+@media screen and (min-width:400px) and (max-width:700px) and (min-device-height:640px) and (max-device-height:1024px){
   .initial{
     width: auto;
     height: 4em;
@@ -233,20 +237,21 @@
       height: 7em;
       width: 7em;
       left: 35%; 
+    
     }
     .fund{
       object-fit:inherit;
     }
   }
 /* Media Queries pantalla 250PX a 399PX*/
-@media screen and (min-width:250px) and (max-width:399px) and (min-device-height: 360px) and (max-device-height:640px) {
+@media screen and (min-width:250px) and (max-width:399px) and (min-device-height: 360px) and (max-device-height:750px) {
   .initial{
     width:auto;
     height: 4em;
     }
     .welcome{
-      font-size: 2.5em;
-      left: 25%;  
+      font-size: auto;
+      left: 20%;  
      }   
      .logo{
       height: 3em;
@@ -278,6 +283,7 @@
       top: 30%;
       left: 18%;
       right: 15%;
+      margin-bottom: 30%;
       font-size: 1.3em;  
     }
     .pokeball{
