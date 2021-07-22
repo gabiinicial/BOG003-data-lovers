@@ -28,27 +28,50 @@
         <img id="poke" class="pokeball" src="./imagenes/Pokeball.png" alt="Pokeball">
       </div>
     </section>
-    <section>  
+    <section>
       <div id="page2" hidden>
         <img class="fund2" src="imagenes/Fondo2.png" alt="Fondo2">
-        <h2 class="list">En esta sección encontraras una lista de Pokémon de la región de Johto y Kanto, con su respectiva
+        <h2 class="list">En esta sección encontraras una lista de Pokémon de la región de Johto y Kanto, con su
+          respectiva
           descripción</h2>
-          <h3 class="order">Ordenar según Tipo:</h3>
-          <select name="type" id="type">
-            <option>Tipo</option>
-            <option value="normal" id="normal">Normal</option>
-            <option value="grass" id="grass">Hierba</option>
-            <option value="fire" id="fire">Fuego</option>
-          </select>
-          <h3 class="az">Orden Alfabético:</h3>
-          <select name="alfabet" id="alfabet">
-            <option>Alfabético</option>
-            <option value="order1" id="order1">A-Z</option>
-            <option value="order2" id="order2">Z-A</option>
-          </select>
-       </div>
+        <h3 class="order">Filtrar según Tipo:</h3>
+        <select name="type" id="type">
+          <option value="normal" id="normal">Normal</option>        
+          <option value="grass" id="grass">Hierba</option>
+          <option value="fire" id="fire">Fuego</option>
+          <option value="bug" id="bug">Bicho</option>
+          <option value="dragon" id="dragon">Dragón</option>
+          <option value="electric" id="electric">Eléctrico</option>
+          <option value="fairy" id="fairy">Hada</option>
+          <option value="fighting" id="fighting">Lucha</option>
+          <option value="flying" id="flying">Volador</option>
+          <option value="ghost" id="ghost">Fantasma</option>
+          <option value="earth" id="earth">Tierra</option>
+          <option value="ice" id="ice">Hielo</option>
+          <option value="poison" id="poison">Veneno</option>
+          <option value="psychic" id="phychic">Psíquico</option>
+          <option value="rock" id="rock"> Roca</option>
+          <option value="steel" id="steel"> Acero</option>
+          <option value="water" id="water"> Agua</option>
+        </select>
+
+        <h3 class="orderC">Ordenar según Columna:</h3>
+        <select name="colum" id="colum">
+          <option value="name">Nombre</option>        
+          <option value="num" >Numero</option>
+          <option value="weaknesses">Debilidades</option>
+          
+        </select>
+
+        <h3 class="az">Orden Alfabético:</h3>
+        <select name="alfabet" id="alfabet">
+          <option value="order1" >Ascendente</option>
+          <option value="order2" >Descendente</option>
+        </select>
+      </div>
+      <div id="card"  hidden>
+      </div>
     </section>
-    </div>
   </main>
   <footer>
     <h2 class="foot">Siguenos en nuestras redes</h2>
