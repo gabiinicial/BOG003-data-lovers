@@ -1,5 +1,4 @@
 
-
 function filterData(data, condition) {
 
   let pokemonsFilter = [];
@@ -20,16 +19,15 @@ function sortData(data, sortBy, sortOrder) {
 
   let pokemonsOrder = [];
   for (let i = 0; i < data.pokemon.length; i++) {
-
-    /*for (let names = 0; data.pokemon[i].name; i++) {
-      if (data.pokemon.[].names === sortBy);
-      pokemonsOrder.push(data.pokemon[i]);*/
-
+    for (let nums = 0; data.pokemon[i].num; i++) {
+      if (data.pokemon.num[nums] === sortBy);
+      pokemonsOrder.push(data.pokemon[i]);
     }
+    /*else if(data.pokemon.num).sortOrder((a, b) => a - b);*/
+    
   }
-
-
+  return pokemonsOrder;
+}
 export {
-  filterData,
-  sortData
-};
+  filterData, sortData
+}

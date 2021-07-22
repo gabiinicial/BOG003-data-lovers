@@ -25,7 +25,7 @@ document.getElementById("poke").addEventListener("click", () => {
   document.getElementById('page2').removeAttribute('hidden');
   document.getElementById('page2').style.display = 'block';
   document.getElementById('card').removeAttribute('hidden');
-});
+  });
 //recorrido para traer la data y agregarla
 
 function allPokemon(){
@@ -33,7 +33,7 @@ function allPokemon(){
     for (let i = 0; i < data.pokemon.length; i++) {
 
       const imag = document.createElement("img");
-      imag.src = data.pokemon[i].img
+      imag.src = data.pokemon[i].img;
       document.getElementById("card").appendChild(imag);
     
       const nameT = document.createElement("p");
@@ -41,7 +41,6 @@ function allPokemon(){
       document.getElementById("card").appendChild(nameT);
     }  
 }
-
 // funcion que se trae todos los pokemon
 allPokemon();
 /*
