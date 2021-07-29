@@ -5,10 +5,6 @@
 
  }
 
- main {
-   overflow: visible;
- }
-
  .initial {
    background-color: #06204C;
    height: 6.5em;
@@ -92,21 +88,22 @@
   background-repeat: no-repeat;
   background-attachment: scroll;
   position: relative;
-  
  }
  .sectionTwo{
-
+   background-color: #2ed1e750;
  }
+
+
 #card{
-  border-style: solid;
-  border-width: 5px;
+  background-image: url(/imagenes/fondoCard.jpg);
+  background-size:cover;
 }
- #cont{
-  object-position: center;
- }
- #rowCard{
+ 
+ #rowCard{ 
   margin-top: 10%;
-
+  display: flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
  }
  .welcome {
    position: absolute;
@@ -121,9 +118,6 @@
    color: #06204C;
    margin-top: 0.8em;
  }
-
-
-
  .description {
    position: absolute;
    top: 38%;
@@ -137,6 +131,9 @@
    filter: blur(1.5 rem);
    border-radius: 40px;
    box-shadow: 0 0 20px 8px #96c9de9a;
+ }
+ footer{
+   display:grid;
  }
 
  .foot {
@@ -161,16 +158,7 @@
    width: 7em;
  }
 
- .fund2 {
-   position: absolute;
-   object-fit: cover;
-   width: 100%;
-   height: 100vh;
-   opacity: 40%;
- }
-
  .list {
-   position: absolute;
    top: 20%;
    left: 15%;
    right: 15%;
@@ -217,18 +205,6 @@
    display: flex;
    right: 23%;
  }
- .page2{
-   position: relative;
- }
-
- #rowCard{
-position:absolute; 
-display: flex;
-flex-wrap:wrap;
-justify-content:space-between;
-
-}
-
  /*Media Queries 699PX a 900PX*/
  @media screen and (min-width:700px) and (max-width:960px) and (min-device-height: 500px) and (max-device-height:900px) {
    .initial {
