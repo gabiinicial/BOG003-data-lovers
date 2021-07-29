@@ -2,6 +2,7 @@ import {
   filterData,
   sortData,computeStats
 } from './data.js';
+import  chart  from 'chart.js';
 
 import data from './data/pokemon/pokemon.js';
 // import data from './data/lol/lol.js';
@@ -35,21 +36,21 @@ const callPoke = (datPoke) => {
   //recorrido para traer la data y agregarla
   datPoke.forEach((e) => {
   let re= document.createElement("div"); re.id= "card";
-      const imag = document.createElement("img").createElement("div");
-      const nameT = document.createElement("p");
+  const nameT = document.createElement("p");
+      const imag = document.createElement("img");imag.id="imagClass";
       const types = document.createElement("p");
+      const number = document.createElement("p");
       const weaknessesP = document.createElement("p");
+      number.innerText = "# " + e.num;
+      nameT.innerText = e.name;
       imag.src = e.img;
-      nameT.innerText = e.name + " #" + e.num;
       types.innerText = e.type;
       weaknessesP.innerText = e.weaknesses;
       
+      re.appendChild(nameT)
+      re.appendChild(number);
       re.appendChild(imag);
-
-      re.appendChild(nameT);
-
       re.appendChild(types);
-
       re.appendChild(weaknessesP);
       document.getElementById("rowCard").appendChild(re);
     });
