@@ -1,4 +1,3 @@
-
 function filterData(data, condition) {
 
   let pokemonsFilter = [];
@@ -11,7 +10,6 @@ function filterData(data, condition) {
       }
     }
   }
-  console.log(pokemonsFilter);
   return pokemonsFilter;
 }
 //funcion (parametros que oredenan con algunos campos y segun las indicaciones)
@@ -19,8 +17,6 @@ function sortData(data, sortBy, sortOrder) {
 
   let pokemonsOrder = data.slice();
 
-  console.log('la propiedad es:' + sortBy);
-  console.log(data);
 
   if (sortBy === "num") {
     if (sortOrder === "asc") {
@@ -43,10 +39,43 @@ function sortData(data, sortBy, sortOrder) {
       pokemonsOrder.sort((a, b) => (a.weaknesses.length < b.weaknesses.length) ? 1 : -1);
     }
   }
-  
-  console.log(pokemonsOrder);
+
   return pokemonsOrder;
 }
+
+function computeStats(data) {
+  let minR = []
+  let maxR = []
+  for (let i = 0; i < data.pokemon.length; i++) {
+
+    if (data.pokemon[i].resistant.length <= 3) {
+      minR.push(data.pokemon[i]);
+    } else
+    if (data.pokemon[i].resistant.length >= 4) {
+      maxR.push(data.pokemon[i]);
+    }
+  }
+
+  const totalResistant = maxR.length + minR.length;
+
+  let porcentageMin = (minR.length/totalResistant)*100; 
+  let porcentageMax =  (maxR.length/totalResistant)*100;  
+  
+  porcentageMax = Math.round(porcentageMax);
+  porcentageMin = Math.round(porcentageMin);
+
+  const eunnombre = {
+    "porcentageMax":porcentageMax,
+    "porcentageMin":porcentageMin
+  }
+  console.log("el porcentaje min es: "+eunnombre.porcentageMin+"/ "+totalResistant);
+  console.log("el porcentaje max es: "+eunnombre.porcentageMax+"/ "+totalResistant);
+  
+  return eunnombre;
+}
+
 export {
-  filterData, sortData
+  filterData,
+  sortData,
+  computeStats
 }

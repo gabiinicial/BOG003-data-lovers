@@ -1,23 +1,53 @@
-import { example, anotherExample } from '../src/data.js';
+import {
+  sortData
+} from '../src/data.js';
 
 
-describe('example', () => {
+/*
+describe('filterData', () => {
   it('is a function', () => {
-    expect(typeof example).toBe('function');
+    expect(typeof filterData).toBe('function');
   });
 
-  it('returns `example`', () => {
-    expect(example()).toBe('example');
+  it('returns `filterData` for "fire"', () => {
+    expect(filterData('fire')).toBe('fire');
+  });
+  it('returns `filterData` for "ice"', () => {
+    expect(filterData('fire')).toBe('ice');
+  });
+  it('returns `filterData` for "normal"', () => {
+    expect(filterData('fire')).toBe('normal');
   });
 });
+*/
 
-
-describe('anotherExample', () => {
-  it('is a function', () => {
-    expect(typeof anotherExample).toBe('function');
+describe('sortData', () => {
+  /*it('is a function', () => {
+    expect(typeof sortData).toBe('function');
   });
 
-  it('returns `anotherExample`', () => {
-    expect(anotherExample()).toBe('OMG');
+  it('returns `sortData` for "num"', () => {
+    expect(sortData()).toBe('num');
+  });*/
+  it('returns `sortData` for "weaknesses"', () => {
+    let testPokemon = [{
+      "num": "001",
+      "name": "bulbasaur",
+      "weaknesses": [
+        "fire",
+        "ice",
+        "flying",
+        "psychic"
+      ]
+    }, {
+      "num": "002",
+      "name": "pikachu",
+      "weaknesses": [
+        "fire",
+        "psychic"
+      ]
+    }];
+   
+    expect(sortData(testPokemon, "weaknesses", "asc")).not.toBeNull();
   });
 });

@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
+  <title>PokeGo</title>
 </head>
 
 <body>
@@ -67,8 +68,10 @@
           <option value="asc" >Ascendente</option>
           <option value="desc" >Descendente</option>
         </select>
-      </div>
-      <div id="card" hidden onload="print()">
+        <div id="cont" hidden >
+          <div id="rowCard">
+          </div>
+        </div>
       </div>
     </section>
   </main>
@@ -82,7 +85,6 @@
       <img src="imagenes/face.png" alt="facebook">
     </div>
   </footer>
-  </div>
   <div id="root"></div>
   <script src="main.js" type="module"></script>
 </body>

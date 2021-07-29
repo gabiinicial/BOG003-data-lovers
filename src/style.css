@@ -95,10 +95,18 @@
   
  }
  .sectionTwo{
-  background-image: url(imagenes/fondo2.png);
-  height: 120vh;
-  background-repeat: no-repeat;
-  background-size: cover;
+
+ }
+#card{
+  border-style: solid;
+  border-width: 5px;
+}
+ #cont{
+  object-position: center;
+ }
+ #rowCard{
+  margin-top: 10%;
+
  }
  .welcome {
    position: absolute;
@@ -167,7 +175,7 @@
    left: 15%;
    right: 15%;
    font-family: 'Nunito';
-   font-size: 1.5 rem;
+   font-size:1.5rem;
    text-align: center;
    color: #06204C;
  }
@@ -209,12 +217,16 @@
    display: flex;
    right: 23%;
  }
- page2{
+ .page2{
    position: relative;
  }
 
- #card {
+ #rowCard{
 position:absolute; 
+display: flex;
+flex-wrap:wrap;
+justify-content:space-between;
+
 }
 
  /*Media Queries 699PX a 900PX*/
@@ -338,7 +350,7 @@ position:absolute;
    }
 
    .welcome {
-     font-size: auto;
+     font-size:auto;
      left: 20%;
    }
 
