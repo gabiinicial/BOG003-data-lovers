@@ -65,11 +65,11 @@ function computeStats(data) {
   porcentageMin = Math.round(porcentageMin);
 
   const eunnombre = {
-    "porcentageMax":porcentageMax,
-    "porcentageMin":porcentageMin
+    "Maxima Resistencia":porcentageMax,
+    "Minima Resistencia":porcentageMin
   }
-  console.log("el porcentaje min es: "+eunnombre.porcentageMin+"/ "+totalResistant);
-  console.log("el porcentaje max es: "+eunnombre.porcentageMax+"/ "+totalResistant);
+  //console.log("el porcentaje min es: "+eunnombre.porcentageMin+"/ "+totalResistant);
+  //console.log("el porcentaje max es: "+eunnombre.porcentageMax+"/ "+totalResistant);
   
   return eunnombre;
 }
