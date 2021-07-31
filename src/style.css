@@ -97,14 +97,22 @@
 #card{
   background-image: url(/imagenes/fondoCard.jpg);
   background-size:cover;
+  height: 19.5em;
+  font-family: "Nunito";
 }
  
  #rowCard{ 
+   margin: 2em;
   margin-top: 10%;
-  display: flex;
-  flex-wrap:wrap;
-  justify-content:space-between;
- }
+  display: grid;
+  grid-template-columns: 12em 12em 12em 12em ;
+  grid-row-gap: 2em;
+ 
+  justify-content:space-evenly;
+  
+  
+}
+
  .welcome {
    position: absolute;
    top: 3%;

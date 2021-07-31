@@ -2,7 +2,7 @@ import {
   filterData,
   sortData, computeStats
 } from './data.js';
-import  chart  from 'chart.js';
+
 
 import data from './data/pokemon/pokemon.js';
 // import data from './data/lol/lol.js';
@@ -38,9 +38,9 @@ const callPoke = (datPoke) => {
   let re= document.createElement("div"); re.id= "card";
   const nameT = document.createElement("p");
       const imag = document.createElement("img");imag.id="imagClass";
-      const types = document.createElement("p");
-      const number = document.createElement("p");
-      const weaknessesP = document.createElement("p");
+      const types = document.createElement("p"); types.id="typeClass";
+      const number = document.createElement("p"); number.id="numClass"
+      const weaknessesP = document.createElement("p");weaknessesP.id="weakClass";
       number.innerText = "# " + e.num;
       nameT.innerText = e.name;
       imag.src = e.img;
@@ -80,24 +80,5 @@ const callPoke = (datPoke) => {
   });
 
 
-
   let f = computeStats(data);
   console.log(f);
-
-/* const imag = document.createElement("img")
-      imag.src = e.img;
-      document.getElementById("rowCard").appendChild(imag);
-
-      const nameT = document.createElement("p");
-      nameT.innerText = e.name + e.num;
-      document.getElementById("rowCard").appendChild(nameT);
-
-      const types = document.createElement("p");
-      types.innerText = e.type;
-      document.getElementById("rowCard").appendChild(types);
-
-      const weaknessesP = document.createElement("p");
-      weaknessesP.innerText = e.weaknesses;
-      document.getElementById("rowCard").appendChild(weaknessesP);
-    });
-  }*/
