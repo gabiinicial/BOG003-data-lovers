@@ -1,4 +1,60 @@
 # Data Lovers
+<img src="https://images.app.goo.gl/rgDLCY3tnuYApyQu8" width="500" height="300"/>
+
+## Índice
+
+* [1. Resumen del Proyecto](#1-Resumen-del-Proyecto)
+* [2. Definición del producto](#2-Definición-del-producto)
+* [3. Historias de Usuarios](#3-Historias-de-Usuarios)
+* [4. Prototipo de baja Fidelidad](#4-Prototipo-de-baja-Fidelidad)
+* [5. Feedback](#5-Feedback)
+* [6. Prototipo de alta Fidelidad](#6-Prototipo-de-alta-Fidelidad)
+* [7. Consideraciones técnicas](#7-consideraciones-técnicas)
+* [8. Pistas, tips y lecturas complementarias](#8-pistas-tips-y-lecturas-complementarias)
+* [9. Checklist](#9-checklist)
+
+***
+
+## 1. Resumen del Proyecto
+
+Este proyecto esta basado en el juego de Pokémon Go, en esta pagina encontraras todos los Pokemones de la region de Johto y Kanto, con su respectiva descripción, asi podrás escoger el más adecuado para tu batalla Pokémon.
+
+Elegimos este proyecto con el fin de contribuir en el uso del juego, se creó una galería digital en donde se puede visualizar las principales características de cada uno de los personajes de Pokémon de las regiones mencionadas anteriormente, Además, podrás filtrar todos estos por tipo, ordenarlos por número, nombre o debilidades adicional los puedes ordenar de forma ascendente o descendente, según como el usuario desee.
+
+
+## 2. Definición del producto
+
+Para dar inicio a nuestro proyecto y tener claro la finalidad del mismo decidimos realizar uan encuesta con el fin de identificar la necesidad real del usuario.
+
+imag encuesta 1 
+imag encuesta 2
+
+## 3. Historias de Usuarios
+
+Uno de nuestros usuarios no conoce ni tiene la aplicacion de pokemon Go, sin embargo los demas son jugadores de Pokemon Go que quieran conocer acerca de las caracteristicas de cada pokemon de la región de Kanto y Johto.
+
+##### Usuario 1
+Yo como usuario: Quiero ver que al entrar a la pagina tenga una descripción del contenido de la pagina y al ser un usuario que no he jugado Pokémon Go que me de la facilidad para descargar la app
+
+##### Usuario 2
+Yo como usuario: Quiero que al momento de dar clic a un botón me lleve a una pagina en donde pueda ver todos los Pokémon según numero y poderlo ordenar según su tipo
+
+##### Usuario 3
+Como usuario: Quiero que al dar click en el recuadro este muestre una tarjeta emergente de la descripción, esto seria por cada uno de por Pokémon. Adicional pueda ordenarlo por si habilidad.
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+# Data Lovers
 
 ## Índice
 
