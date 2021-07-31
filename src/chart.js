@@ -1,9 +1,0 @@
-function drawGraphic (){
-    
-}
-
-
-
-export {
-    filterData,
-  }

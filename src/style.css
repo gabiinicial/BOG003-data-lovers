@@ -372,9 +372,19 @@
      height: 6em;
      width: 6em;
      left: 35%;
+   }  
+     .fund {
+      object-fit: inherit;
+    }
+  }
+/*Estilo de modal grafica*/
+   .myModal{
+     position:fixed;
+     z-index: 2;
+     width: 50%;
+     padding-left: 3em;
+     height: 60%;
+     background-color:rgba(255, 255, 255, 0.692);
+     ;
    }
-
-   .fund {
-     object-fit: inherit;
-   }
- }
+  
