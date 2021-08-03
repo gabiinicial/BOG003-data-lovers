@@ -1,6 +1,8 @@
+/* eslint-disable no-undef */
 import {
   filterData,
-  sortData, computeStats
+  sortData,
+  computeStats
 } from './data.js';
 
 
@@ -13,45 +15,51 @@ document.getElementById("btngo").addEventListener("click", () => { //opcion que 
   document.getElementById("page2").style.display = 'none';
   document.getElementById("page1").style.display = 'block';
 })
-document.getElementById("btnapp").addEventListener("click", () => {//eventos que llevan a los enlaces de las opciones que representa el menu
+document.getElementById("btnapp").addEventListener("click", () => { //eventos que llevan a los enlaces de las opciones que representa el menu
   location.href = "https://pokemongolive.com/es/";
 })
 document.getElementById("btnj").addEventListener("click", () => {
-  location.href = "https://pokemongolive.com/es/play-where-you-are/";//eventos que llevan a los enlaces de las opciones que representa el menu
+  location.href = "https://pokemongolive.com/es/play-where-you-are/"; //eventos que llevan a los enlaces de las opciones que representa el menu
 })
 //Boton de Pokebola
 document.getElementById("poke").addEventListener("click", () => {
   document.getElementById('page1').style.display = 'none';
   document.getElementById('page2').removeAttribute('hidden');
   document.getElementById('page2').style.display = 'block';
-  document.getElementById("rowCard").removeAttribute('hidden');// atributo que remueve el contenido de ese id de la pantallaprincipal
- // document.getElementById("statistics").removeAttribute('hidden');
-  callPoke(datPoke);// Dibuja los Pokemon
+  document.getElementById("rowCard").removeAttribute('hidden'); // atributo que remueve el contenido de ese id de la pantallaprincipal
+  // document.getElementById("statistics").removeAttribute('hidden');
+  callPoke(datPoke); // Dibuja los Pokemon
 });
 // Boton Grafica de estadisticas
 document.getElementById("statistics").addEventListener("click", () => {
-document.getElementById("mModal").removeAttribute('hidden');
-document.getElementById("mModal").style.display = 'block';
+  document.getElementById("mModal").removeAttribute('hidden');
+  document.getElementById("mModal").style.display = 'block';
 });
 //Cierre de modal
 let span = document.getElementById("mModal")[0];
 document.getElementById("xModal").addEventListener("click", () => {
- span.style.display = "none";
+  span.style.display = "none";
 });
 
 // funcion que se trae todos los pokemon
 let datPoke = data.pokemon;
 const callPoke = (datPoke) => {
-  document.getElementById("rowCard").textContent = "";//permite que al momento de seleccionar otras opciones los nodos no se sobre pongan
+  document.getElementById("rowCard").textContent = ""; //permite que al momento de seleccionar otras opciones los nodos no se sobre pongan
 
   //recorrido para traer la data y agregarla
   datPoke.forEach((e) => {
-    let containCard = document.createElement("div"); containCard.id = "card";
-    const nameT = document.createElement("p"); nameT.id = "nametClass";
-    const imag = document.createElement("img"); imag.id = "imagClass";
-    const types = document.createElement("p"); types.id = "typesClass";
-    const number = document.createElement("p"); number.id = "numberClass";
-    const weaknessesP = document.createElement("p"); weaknessesP.id = "weakClass";
+    let containCard = document.createElement("div");
+    containCard.id = "card";
+    const nameT = document.createElement("p");
+    nameT.id = "nametClass";
+    const imag = document.createElement("img");
+    imag.id = "imagClass";
+    const types = document.createElement("p");
+    types.id = "typesClass";
+    const number = document.createElement("p");
+    number.id = "numberClass";
+    const weaknessesP = document.createElement("p");
+    weaknessesP.id = "weakClass";
     number.innerText = "# " + e.num;
     nameT.innerText = e.name;
     imag.src = e.img;
@@ -95,7 +103,7 @@ const x = ['Minima Resistencia', 'Maxima Resistencia']; // Identficador de resis
 const colors = ["rgba(164, 8, 8, 1)", "rgba(6, 32, 76, 1)"];
 
 let myCanva = document.getElementById("myGraph");
-new Chart (myCanva,{
+new Chart (myCanva, {
   type: "bar",
   data: {
     labels: x,
@@ -104,13 +112,15 @@ new Chart (myCanva,{
       data: y
     }]
   },
-options:{
-  legend:{displey: true},
-  title:{
-  displey: true,
-  text: "Estadistica comparativa de resistencia de Pokémon"
+  options: {
+    legend: {
+      displey: true
+    },
+    title: {
+      displey: true,
+      text: "Estadistica comparativa de resistencia de Pokémon"
+    }
   }
-}
 });
 /* const imag = document.createElement("img")
       imag.src = e.img;

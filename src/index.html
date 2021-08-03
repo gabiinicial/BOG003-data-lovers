@@ -24,16 +24,17 @@
       <div class="sectionOne" id="page1">
         <h1 class="welcome">¡Bienvenidos<br>Jugadores!</h1>
         <p class="description">En esta página disfrutaras de todo nuestro contenido basado en las características y
-          destrezas de cada Pokémon
+          destrezas de cada Pokémon 
           con una amplia variedad, asi puedas escoger el más adecuado para tu batalla Pokémon.</p>
         <img id="poke" class="pokeball" src="./imagenes/Pokeball.png" alt="Pokeball">
       </div>
     </section>
     <section class="sectionTwo">
       <div id="page2" hidden>
-        <h2 class="list">En esta sección encontraras una lista de Pokémon de la región de Johto y Kanto, con su
+        <h2 class="list">En esta sección encontraras una lista de Pokémon<br> de la región de Johto y Kanto, con su
           respectiva
           descripción</h2>
+          <div class="position1">
         <h3 class="order">filtrar según Tipo:</h3>
         <select name="type" id="type">
           <option>Todos</option>
@@ -55,7 +56,8 @@
           <option value="steel"> Acero</option>
           <option value="water"> Agua</option>
         </select>
-
+          </div>
+          <div class="position2">
         <h3 class="orderC">Ordenar según Columna:</h3>
         <select name="colum" id="colum">
           <option value="name">Nombre</option>
@@ -69,6 +71,7 @@
           <option value="asc">Ascendente</option>
           <option value="desc">Descendente</option>
         </select>
+      </div>
         <button id="statistics">Estadisticas</button>
         <div class="myModal" id="mModal" hidden>
           <div class="contModal">
@@ -80,7 +83,6 @@
         </div>
         <div id="rowCard" hidden>
         </div>
-      </div>
       </div>
     </section>
   </main>

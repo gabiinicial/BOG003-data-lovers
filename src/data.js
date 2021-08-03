@@ -1,8 +1,8 @@
+
 function filterData(data, condition) {
 
   let pokemonsFilter = [];
-
-  for (let i = 0; i < data.pokemon.length; i++) {
+ for (let i = 0; i < data.pokemon.length; i++) {
 
     for (let types = 0; types < data.pokemon[i].type.length; types++) {
       if (data.pokemon[i].type[types] === condition) {
