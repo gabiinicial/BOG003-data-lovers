@@ -21,7 +21,7 @@
    transition-duration: 0.3s;
    cursor: pointer;
    color: white;
-   background-color: #f4f4f436;
+   background-color: #f4f4f423;
    border-style: solid;
    border-color: #f4f4f4ef;
    border-radius: 3.125em 0em 0em 3.125em;
@@ -42,7 +42,7 @@
  }
 
  .menuapp {
-   background-color: #f4f4f436;
+   background-color: #f4f4f423;
    border-style: solid;
    border-color: #f4f4f4ef;
    color: white;
@@ -61,7 +61,7 @@
  }
 
  .menuj {
-   background-color: #f4f4f436;
+   background-color: #f4f4f423;
    border-style: solid;
    border-color: #f4f4f4ef;
    color: white;
@@ -94,9 +94,13 @@
   position: relative;
  }
  .sectionTwo{
-  
+  background-image: url(imagenes/Fondo2.png);
  }
-
+ 
+ .statist{
+  position:fixed;
+  left: 85%;
+ }
 
 #card{
   background-image: url(/imagenes/fondoCard.jpg);
