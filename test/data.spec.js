@@ -64,45 +64,25 @@ it('returns `sortData` for "name"', () => {
     "num": "001","name": "bulbasaur",},{"num": "002","name": "pikachu",}];
   expect(sortData(testPokemon, "name", "desc")).toEqual(testPokemon.reverse());
 });
+it('returns `sortData` for "name"', () => {
+  let testPokemon = [{
+    "num": "001","name": "bulbasaur",},{"num": "002","name": "pikachu",}];
+  expect(sortData(testPokemon, "name", "desc")).not.toEqual(testPokemon);
+});
 });
 describe('computeStats', () => {
   it('is a function', () => {
     expect(typeof computeStats).toBe('function');
   });
-  it('retornar `computeStats` para "minR" devolver un arreglo vacio', () => {
+  it('retornar `computeStats` para devolver totalResistant', () => {
     let computeResistan={
-      pokemon:[{
-        "num": "001",
-        "name": "bulbasaur",
-        "resistant": [
-          "water",
-          "electric",
-          "grass",
-          "fighting",
-          "fairy"
-        ],
-      },{
-        "num": "002",
-    "name": "ivysaur",
-    "resistant": [
-      "water",
-      "electric",
-      "grass",
-      "fighting",
-      "fairy"
-    ],
-  },{
-    "num": "003",
-    "name": "venusaur",
-    "resistant": [
-      "water",
-      "electric",
-      "grass",
-      "fighting",
-      "fairy"
-    ],
-      }]
+      pokemon:[{"num": "001","name": "bulbasaur","resistant": ["water","electric","grass","fighting","fairy" ], },{"num": "002","name": "ivysaur","resistant": ["water","electric","grass","fighting","fairy"],},{"num": "003","name": "venusaur","resistant": [ "water","electric","grass","fighting","fairy"],},{"num": "216",
+      "name": "teddiursa","resistant": [
+        "ghost"
+      ],}]
     }
-      expect(computeStats(computeResistan,"minR")).toEqual(computeResistan);
+    const eunnombre = {"Maxima Resistencia": 75,"Minima Resistencia": 25
+    };
+      expect(computeStats(computeResistan)).toEqual(eunnombre);
     });
 });

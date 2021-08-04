@@ -85,13 +85,16 @@
  .sectionOne{
   background-image: url(imagenes/Fondo.png);
   height: 120vh;
+  max-width:100vw;
   background-repeat: no-repeat;
-  background-attachment: scroll;
+  overflow: hidden;
+  justify-content: center;
+  display:flex;
+  background-size: cover;
   position: relative;
  }
  .sectionTwo{
-   background-color: #2ed1e750;
-  position: relative;
+  
  }
 
 
@@ -106,7 +109,7 @@
    margin: 2em;
   margin-top: 10%;
   display: grid;
-  grid-template-columns: 12em 12em 12em;
+  grid-template-columns: 12em 12em 12em 12em;
   grid-row-gap: 2em;
   justify-content:space-evenly;
   
@@ -164,53 +167,58 @@
    width: 7em;
  }
  .position1{
-   display: flex;
+   display: grid;
    justify-content: center;
-  
+   margin-top: 3%;
  }
+
  .position2{
    display: grid;
-
+   grid-template-columns: 15em 15em;
+   justify-content:space-around;
+   margin-top: 3%;
  }
-
- .list {
-   margin-left: auto;
-   margin-right:auto;
+ 
+ .list{
    font-family: 'Nunito';
    font-size:1.5rem;
    text-align: center;
    color: #06204C;
+   justify-content: center;
+   padding-top: 2em;
  }
 
- .order {
-
- }
  #type {
    height: 2em;
-   width: 20%;
+   width: 20vw;
  border-radius: 0.5em;
+ font-family:'Bubblegum Sans';
+ padding-left: 0.5em;
+ font-size: 1em;
+ background-color: #06204c3d;
+ }
  
- }
- .orderC{
-   height: 2em;
-   width: 20%;
- border-radius: 0.5em;
- text-align: center;
- justify-content:flex-end;
- }
  #colum{
-
+  height: 2em;
+  width: 20vw;
+border-radius: 0.5em;
+font-size: 1em;
+font-family:'Bubblegum Sans';
+padding-left: 0.5em;
+background-color: #06204c3d;
   }
 
- .az {
-   
-   text-align: center;
-   
- }
 
  #alfabet {
-   
- }
+  height: 2em;
+  width: 20vw;
+border-radius: 0.5em;
+font-size: 1em;
+font-family:'Bubblegum Sans';
+padding-left: 0.5em;
+background-color: #06204c3d;
+  }
+
  
  
 /*Estilo de modal grafica*/
