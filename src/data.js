@@ -55,7 +55,6 @@ function computeStats(data) {
       maxR.push(data.pokemon[i]);
     }
   }
-
   const totalResistant = maxR.length + minR.length;
 
   let porcentageMin = (minR.length/totalResistant)*100; 
@@ -70,7 +69,6 @@ function computeStats(data) {
   }
   //console.log("el porcentaje min es: "+eunnombre.porcentageMin+"/ "+totalResistant);
   //console.log("el porcentaje max es: "+eunnombre.porcentageMax+"/ "+totalResistant);
-  
   return eunnombre;
 }
 

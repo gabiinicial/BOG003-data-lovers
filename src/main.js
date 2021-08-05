@@ -41,11 +41,11 @@ document.getElementById("xModal").addEventListener("click", () => {
   span.style.display = "none";
 });
 
+
 // funcion que se trae todos los pokemon
 let datPoke = data.pokemon;
 const callPoke = (datPoke) => {
   document.getElementById("rowCard").textContent = ""; //permite que al momento de seleccionar otras opciones los nodos no se sobre pongan
-
   //recorrido para traer la data y agregarla
   datPoke.forEach((e) => {
     let containCard = document.createElement("div");
@@ -64,7 +64,7 @@ const callPoke = (datPoke) => {
     nameT.innerText = e.name;
     imag.src = e.img;
     types.innerText = e.type;
-    weaknessesP.innerText = e.weaknesses;
+    weaknessesP.innerText= "Debilidades: "  +  e.weaknesses;
 
     containCard.appendChild(nameT);
     containCard.appendChild(number);
@@ -74,6 +74,7 @@ const callPoke = (datPoke) => {
     document.getElementById("rowCard").appendChild(containCard);
   });
 }
+
 //funcion que se encarga de realizar las acciones dentro de cada evento
 function changeFunction() {
 

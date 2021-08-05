@@ -1,13 +1,12 @@
  * {
-   box-sizing: border-box;
+   box-sizing:content-box;
    margin: 0;
    padding: 0;
-
  }
 
  .initial {
    background-color: #06204C;
-   height: 6.5em;
+   height: 6.2em;
    width: 100%;
    display: flex;
  }
@@ -26,9 +25,9 @@
    border-color: #f4f4f4ef;
    border-radius: 3.125em 0em 0em 3.125em;
    width: 11em;
-   margin-left: 30%;
-   margin-top: 2%;
-   margin-bottom: 2%;
+   margin-left: 25%;
+   margin-top: 2.5%;
+   margin-bottom: 2.5%;
    margin-right: 1em;
    font-family: 'Bubblegum Sans';
    font-size: 1.2em;
@@ -47,8 +46,8 @@
    border-color: #f4f4f4ef;
    color: white;
    width: 11em;
-   margin-top: 2%;
-   margin-bottom: 2%;
+   margin-top: 2.5%;
+   margin-bottom: 2.5%;
    font-family: 'Bubblegum Sans';
    font-size: 1.2em;
    font-weight: lighter;
@@ -68,8 +67,8 @@
    border-radius: 0em 3.125em 3.125em 0em;
    width: 11em;
    margin-left: 1em;
-   margin-top: 2%;
-   margin-bottom: 2%;
+   margin-top: 2.5%;
+   margin-bottom: 2.5%;
    margin-right: 1em;
    font-family: 'Bubblegum Sans';
    font-size: 1.2em;
@@ -94,26 +93,27 @@
   position: relative;
  }
  .sectionTwo{
-  
+  display: grid;
+  grid-template-columns: 1fr ;
  }
 
 
 #card{
-  background-image: url(/imagenes/fondoCard.jpg);
+  background-image: url(/imagenes/imgtarg.JPG);
   background-size:cover;
   height: 19.5em;
+  width: 12em;
   font-family: "Nunito";
 }
  
  #rowCard{ 
-   margin: 2em;
+  
+   margin-left: 2em;
   margin-top: 10%;
   display: grid;
-  grid-template-columns: 12em 12em 12em 12em;
-  grid-row-gap: 2em;
-  justify-content:space-evenly;
-  
-  
+  grid-gap: 5em;
+  grid-template-columns: auto auto auto auto;
+background-size: cover;
 }
 
  .welcome {
@@ -130,10 +130,10 @@
    margin-top: 0.8em;
  }
  .description {
-   position: absolute;
+  position: absolute;
    top: 38%;
-   left: 30%;
-   right: 28%;
+   left: 28%;
+   right: 26%;
    font-family: "Nunito";
    font-size: 1.5em;
    color: #061D2A;
@@ -191,7 +191,7 @@
  #type {
    height: 2em;
    width: 20vw;
- border-radius: 0.5em;
+ border-radius: 0.4em;
  font-family:'Bubblegum Sans';
  padding-left: 0.5em;
  font-size: 1em;
@@ -201,7 +201,7 @@
  #colum{
   height: 2em;
   width: 20vw;
-border-radius: 0.5em;
+border-radius: 0.4em;
 font-size: 1em;
 font-family:'Bubblegum Sans';
 padding-left: 0.5em;
@@ -212,14 +212,39 @@ background-color: #06204c3d;
  #alfabet {
   height: 2em;
   width: 20vw;
-border-radius: 0.5em;
+border-radius: 0.4em;
 font-size: 1em;
 font-family:'Bubblegum Sans';
 padding-left: 0.5em;
 background-color: #06204c3d;
   }
+  #nametClass{
+    font-family:'Bubblegum Sans';
+    text-align: center;
+    margin-top: 0.7em;
+    font-size: 1.1em;
+  }
+ #imagClass{
+margin-left: 2.3em;
+padding: 0em;
+ }
+ #numberClass{
+  font-family:'Bubblegum Sans';
+    text-align: center;
+    margin-top: 0.2em;
+    font-size: 1em;
+ }
+ #weakClass{
+   margin-left: 1.5em;
+   width: 8em;
+   height: auto;
+  font-family:'Patrick Hand';
+  font-size: 1em;
+ font-weight:lighter;
+ text-align: center;
 
- 
+
+ }
  
 /*Estilo de modal grafica*/
    .myModal{
