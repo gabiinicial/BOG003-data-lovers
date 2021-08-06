@@ -2,9 +2,8 @@
 import {
   filterData,
   sortData,
-  computeStats
+  computeStats,
 } from './data.js';
-
 
 import data from './data/pokemon/pokemon.js';
 // import data from './data/lol/lol.js';
@@ -35,6 +34,9 @@ document.getElementById("statistics").addEventListener("click", () => {
   document.getElementById("mModal").removeAttribute('hidden');
   document.getElementById("mModal").style.display = 'block';
 });
+document.getElementById("xModal").addEventListener("click", () => {
+  document.getElementById("mModal").style.display = 'none';
+})
 //Cierre de modal
 let span = document.getElementById("mModal")[0];
 document.getElementById("xModal").addEventListener("click", () => {
@@ -60,10 +62,13 @@ const callPoke = (datPoke) => {
     number.id = "numberClass";
     const weaknessesP = document.createElement("p");
     weaknessesP.id = "weakClass";
+    const resistands = document.createElement("p");
+    resistands .id = "resistClass";
     number.innerText = "# " + e.num;
     nameT.innerText = e.name;
     imag.src = e.img;
-    types.innerText = e.type;
+    types.innerText = "Tipo: " + e.type;
+    resistands.innerText = "Resistencia: " + e.resistant;
     weaknessesP.innerText= "Debilidades: "  +  e.weaknesses;
 
     containCard.appendChild(nameT);
@@ -71,6 +76,7 @@ const callPoke = (datPoke) => {
     containCard.appendChild(imag);
     containCard.appendChild(types);
     containCard.appendChild(weaknessesP);
+    containCard.appendChild(resistands);
     document.getElementById("rowCard").appendChild(containCard);
   });
 }
@@ -100,8 +106,8 @@ document.getElementById("alfabet").addEventListener("change", () => {
 });
 
 const y = computeStats(data); // datos estadisticos
-const x = ['Minima Resistencia', 'Maxima Resistencia']; // Identficador de resistencia a comparar
-const colors = ["rgba(164, 8, 8, 1)", "rgba(6, 32, 76, 1)"];
+const x = ['Minima Resistencia', 'Maxima Resistencia' , 'Minimo Ataque','Maximo Ataque']; // Identficador de resistencia a comparar
+const colors = ["rgba(6, 32, 76, 1)", "rgba(252, 244, 44, 1)"];
 
 let myCanva = document.getElementById("myGraph");
 new Chart (myCanva, {
@@ -115,10 +121,10 @@ new Chart (myCanva, {
   },
   options: {
     legend: {
-      displey: true
+      disply: true
     },
     title: {
-      displey: true,
+      display: true,
       text: "Estadistica comparativa de resistencia de Pokémon"
     }
   }

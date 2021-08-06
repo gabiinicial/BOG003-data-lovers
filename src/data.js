@@ -44,6 +44,8 @@ function sortData(data, sortBy, sortOrder) {
 }
 
 function computeStats(data) {
+  let attackmin= []
+  let attackmax=[]
   let minR = []
   let maxR = []
   for (let i = 0; i < data.pokemon.length; i++) {
@@ -53,24 +55,46 @@ function computeStats(data) {
     } else
     if (data.pokemon[i].resistant.length >= 4) {
       maxR.push(data.pokemon[i]);
-    }
+    }else
+    if(data.pokemon[i].size.length ){
+      attackmin.push(data.pokemon[i]);
+    }/*else
+    if(data.pokemon[i].stats["base-attack"].length >= ){
+      attackmax.push(data.pokemon[i]);
+    }*/
   }
   const totalResistant = maxR.length + minR.length;
-
+  const totalAttack = attackmin.length + attackmax.length;
+  let porcentageAttackmin=(attackmin.length/ totalAttack)*100;
+  let porcentageAttackmax=(attackmax.length/ totalAttack)*100;
   let porcentageMin = (minR.length/totalResistant)*100; 
   let porcentageMax =  (maxR.length/totalResistant)*100;  
   
+  porcentageAttackmin = Math.round(porcentageAttackmin);
+  //porcentageAttackmax =  Math.round( porcentageAttackmax);
   porcentageMax = Math.round(porcentageMax);
   porcentageMin = Math.round(porcentageMin);
 
-  const eunnombre = {
+  const porcentage = {
+    "Minimo Ataque":porcentageAttackmin,
+    "Maximo Ataque":porcentageAttackmax,
     "Maxima Resistencia":porcentageMax,
     "Minima Resistencia":porcentageMin
   }
-  //console.log("el porcentaje min es: "+eunnombre.porcentageMin+"/ "+totalResistant);
-  //console.log("el porcentaje max es: "+eunnombre.porcentageMax+"/ "+totalResistant);
-  return eunnombre;
+  console.log("el porcentaje min es: "+porcentage.porcentageAttackmin +"/ "+totalAttack);
+console.log("el porcentaje max es: "+porcentage.porcentageAttackmax+"/ "+totalAttack);
+  return porcentage;
 }
+/*let computeStatsTwo = (data) =>{
+  let sumattak= [];
+ data.map((dato)=>{
+  
+  
+   sumattak= sumattak + Number(dato.stats["base-attak"]);
+
+});
+return (sumattak /data);*/
+
 
 export {
   filterData,

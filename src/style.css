@@ -104,19 +104,20 @@
 #card{
   background-image: url(/imagenes/imgtarg.JPG);
   background-size:cover;
-  height: 19.5em;
+  height: 21.2em;
   width: 12em;
   font-family: "Nunito";
+  padding:1.5em;
+  box-shadow: 2px 2px 30px rgb(142, 177, 171);
 }
  
  #rowCard{ 
-  
-   margin-left: 2em;
   margin-top: 10%;
   display: grid;
-  grid-gap: 5em;
-  grid-template-columns: auto auto auto auto;
-background-size: cover;
+  grid-gap: 3em;
+  grid-template-columns: repeat(auto-fill, minmax(14em, 1fr));
+  margin-right: 6em;
+  margin-left: 4em;
 }
 
  .welcome {
@@ -171,15 +172,17 @@ background-size: cover;
  }
  .position1{
    display: grid;
-   justify-content: center;
+   justify-content:flex-start;
    margin-top: 3%;
+   justify-content: center;
  }
 
  .position2{
    display: grid;
-   grid-template-columns: 15em 15em;
-   justify-content:space-around;
+   grid-template-columns: repeat(auto-fill, minmax(19em, 1fr));
    margin-top: 3%;
+  justify-content:space-evenly;
+  margin-left: 25%;
  }
  
  .list{
@@ -224,39 +227,81 @@ background-color: #06204c3d;
   #nametClass{
     font-family:'Bubblegum Sans';
     text-align: center;
-    margin-top: 0.7em;
-    font-size: 1.1em;
+    margin-top: 0.5em;
+    font-size: 1.5em;
   }
  #imagClass{
-margin-left: 2.3em;
+margin-left: 2.2em;
 padding: 0em;
+box-sizing: border-box;
  }
  #numberClass{
   font-family:'Bubblegum Sans';
     text-align: center;
     margin-top: 0.2em;
-    font-size: 1em;
+    font-size: 1.5em;
  }
  #weakClass{
-   margin-left: 1.5em;
-   width: 8em;
+   margin-top: 0.5em;
+   width: 9em;
    height: auto;
   font-family:'Patrick Hand';
   font-size: 1em;
- font-weight:lighter;
- text-align: center;
-
+ font-weight:500;
+ text-align:left;
+ }
+ #typesClass {
+   margin-top: 0.5em;
+  width: 8em;
+  height: auto;
+ font-family:'Patrick Hand';
+ font-size: 1em;
+font-weight:lighter;
+text-align:left;
+padding: 0em;
+ }
+ #resistClass{
+   margin-top: 0.5em;
+  width: 10em;
+  height: 3.5em;
+ font-family:'Patrick Hand';
+ font-size: 1em;
+font-weight:lighter;
+text-align:left;
+align-items: baseline;
 
  }
- 
 /*Estilo de modal grafica*/
    .myModal{
-     position:fixed;
-     z-index: 2;
-     width: 50%;
-     padding-left: 3em;
-     height: 60%;
-     background-color:rgba(255, 255, 255, 0.692);
-     ;
+     position: fixed;
+     z-index: 1;
+     top: 1.5em;
+     bottom: 4em;
+     width: 90%;
+     height: 92%;
+     margin-left: 2em;
+     margin-right: 2em;
+     background-color:rgba(252, 252, 252, 0.918);
+     box-shadow: 0 0 20px 8px #5061689a;
+     border-style: solid;
+     border-width: 0.3em;
+     border-radius: 0.5em;
+     border-color:  #06204cee;
+     font-weight: bolder;
+   }
+   .contModal{
+    margin: auto;
+  padding: 1em;
+  width: 80%;
+   }
+   #myGraph{
+     width: 70%;
+     height: auto;
+   }
+   #xModal{
+     margin: 0em;
+    margin-left: 95%;
+    font-size: 3em;
+    cursor: pointer;
    }
   
