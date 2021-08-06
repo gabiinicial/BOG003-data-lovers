@@ -56,8 +56,6 @@ const callPoke = (datPoke) => {
     nameT.id = "nametClass";
     const imag = document.createElement("img");
     imag.id = "imagClass";
-    const types = document.createElement("p");
-    types.id = "typesClass";
     const number = document.createElement("p");
     number.id = "numberClass";
     const weaknessesP = document.createElement("p");
@@ -67,14 +65,20 @@ const callPoke = (datPoke) => {
     number.innerText = "# " + e.num;
     nameT.innerText = e.name;
     imag.src = e.img;
-    types.innerText = "Tipo: " + e.type;
     resistands.innerText = "Resistencia: " + e.resistant;
     weaknessesP.innerText= "Debilidades: "  +  e.weaknesses;
-
+    let box = document.createElement("div");
+    //traer imagenes segun el tipo
+    e.type.forEach((element) =>{
+    let types = document.createElement("img");
+    types.id = "typesClass";
+    types.src = "imgenes/" + element + ".png";
+    box.appendChild(types);
+  });  
+    containCard.appendChild(box);
     containCard.appendChild(nameT);
     containCard.appendChild(number);
     containCard.appendChild(imag);
-    containCard.appendChild(types);
     containCard.appendChild(weaknessesP);
     containCard.appendChild(resistands);
     document.getElementById("rowCard").appendChild(containCard);
