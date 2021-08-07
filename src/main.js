@@ -25,7 +25,7 @@ document.getElementById("poke").addEventListener("click", () => {
   document.getElementById('page1').style.display = 'none';
   document.getElementById('page2').removeAttribute('hidden');
   document.getElementById('page2').style.display = 'block';
-  document.getElementById("rowCard").removeAttribute('hidden'); // atributo que remueve el contenido de ese id de la pantallaprincipal
+  //document.getElementById("rowCard").removeAttribute('hidden'); // atributo que remueve el contenido de ese id de la pantallaprincipal
   // document.getElementById("statistics").removeAttribute('hidden');
   callPoke(datPoke); // Dibuja los Pokemon
 });
@@ -47,7 +47,7 @@ document.getElementById("xModal").addEventListener("click", () => {
 // funcion que se trae todos los pokemon
 let datPoke = data.pokemon;
 const callPoke = (datPoke) => {
-  document.getElementById("rowCard").textContent = ""; //permite que al momento de seleccionar otras opciones los nodos no se sobre pongan
+  document.getElementById("rowCard").innerHTML = ""; //permite que al momento de seleccionar otras opciones los nodos no se sobre pongan
   //recorrido para traer la data y agregarla
   datPoke.forEach((e) => {
     let containCard = document.createElement("div");
@@ -60,27 +60,40 @@ const callPoke = (datPoke) => {
     number.id = "numberClass";
     const weaknessesP = document.createElement("p");
     weaknessesP.id = "weakClass";
-    const resistands = document.createElement("p");
-    resistands .id = "resistClass";
+    const resisText = document.createElement("p");
+    resisText .id = "resisTextClass";
+    const typeText = document.createElement("p");
+    typeText.id = "textType";
     number.innerText = "# " + e.num;
     nameT.innerText = e.name;
-    imag.src = e.img;
-    resistands.innerText = "Resistencia: " + e.resistant;
+    typeText.innerText = "Tipo: ";
+    resisText.innerText = "Resistencia: ";
+    imag.src = e.img;  
     weaknessesP.innerText= "Debilidades: "  +  e.weaknesses;
+
+    let resistBox = document.createElement("div")
+    e.resistant.forEach((element) =>{
+      let resistands = document.createElement("img");
+      resistands.id = "resistClass";
+      resistands.src = "imagenes/" + element + ".png";
+      resistBox.appendChild(resistands);
+    });
     let box = document.createElement("div");
     //traer imagenes segun el tipo
     e.type.forEach((element) =>{
     let types = document.createElement("img");
     types.id = "typesClass";
-    types.src = "imgenes/" + element + ".png";
+    types.src = "imagenes/" + element + ".png";
     box.appendChild(types);
   });  
-    containCard.appendChild(box);
     containCard.appendChild(nameT);
     containCard.appendChild(number);
     containCard.appendChild(imag);
+    containCard.appendChild(typeText);
+    containCard.appendChild(box);
     containCard.appendChild(weaknessesP);
-    containCard.appendChild(resistands);
+    containCard.appendChild(resisText);
+    containCard.appendChild(resistBox);
     document.getElementById("rowCard").appendChild(containCard);
   });
 }
@@ -125,7 +138,7 @@ new Chart (myCanva, {
   },
   options: {
     legend: {
-      disply: true
+      display: true
     },
     title: {
       display: true,

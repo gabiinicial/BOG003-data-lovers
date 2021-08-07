@@ -90,7 +90,7 @@
   justify-content: center;
   display:flex;
   background-size: cover;
-  position: relative;
+  position:relative;
  }
  .sectionTwo{
   background-image: url(imagenes/Fondo2.png);
@@ -107,7 +107,7 @@
   height: 21.2em;
   width: 12em;
   font-family: "Nunito";
-  padding:1.5em;
+  padding:2em;
   box-shadow: 2px 2px 30px rgb(142, 177, 171);
 }
  
@@ -227,18 +227,20 @@ background-color: #06204c3d;
   #nametClass{
     font-family:'Bubblegum Sans';
     text-align: center;
-    margin-top: 0.5em;
+    margin-top: 0.2em;
     font-size: 1.5em;
   }
  #imagClass{
 margin-left: 2.2em;
 padding: 0em;
 box-sizing: border-box;
+margin-top: 0em;
+height: 7.2em;
  }
  #numberClass{
   font-family:'Bubblegum Sans';
     text-align: center;
-    margin-top: 0.2em;
+    margin-top: 0.1em;
     font-size: 1.5em;
  }
  #weakClass{
@@ -250,26 +252,25 @@ box-sizing: border-box;
  font-weight:500;
  text-align:left;
  }
- #typesClass {
-   margin-top: 0.5em;
-  width: 8em;
-  height: auto;
- font-family:'Patrick Hand';
- font-size: 1em;
-font-weight:lighter;
-text-align:left;
-padding: 0em;
+ #typeText{
+   margin-top: 0em;
+}
+ #typesClass{
+   width: 2em;
+   height: 2em;
+   margin-top: 0em;
  }
- #resistClass{
-   margin-top: 0.5em;
-  width: 10em;
-  height: 3.5em;
- font-family:'Patrick Hand';
- font-size: 1em;
-font-weight:lighter;
-text-align:left;
-align-items: baseline;
 
+ #resistClass{
+  width: 1.8em;
+  height: 1.8em;
+ }
+ #resisTextClass{
+  font-family:'Patrick Hand';
+  font-size: 1em;
+ font-weight:lighter;
+ text-align:left;
+ align-items: baseline;
  }
 /*Estilo de modal grafica*/
    .myModal{
