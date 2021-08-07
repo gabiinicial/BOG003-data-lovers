@@ -55,7 +55,7 @@ const callPoke = (datPoke) => {
     const nameT = document.createElement("p");
     nameT.id = "nametClass";
     const imag = document.createElement("img");
-    imag.id = "imagClass";
+      imag.id = "imagClass";
     const number = document.createElement("p");
     number.id = "numberClass";
     const weaknessesP = document.createElement("p");
