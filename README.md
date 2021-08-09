@@ -1,5 +1,5 @@
 # Data Lovers
-<img src="https://images.app.goo.gl/rgDLCY3tnuYApyQu8" width="500" height="300"/>
+<img src="https://github.com/gabiinicial/BOG003-data-lovers/blob/main/src/imagenes/pokemonGo.jpg" width="700px" />
 
 ## Índice
 
@@ -26,8 +26,11 @@ Elegimos este proyecto con el fin de contribuir en el uso del juego, se creó un
 
 Para dar inicio a nuestro proyecto y tener claro la finalidad del mismo decidimos realizar uan encuesta con el fin de identificar la necesidad real del usuario.
 
-imag encuesta 1 
-imag encuesta 2
+ <img src ="https://github.com/gabiinicial/BOG003-data-lovers/blob/main/src/imagenes/Encuestas%201.JPG"/>
+<img src ="https://github.com/gabiinicial/BOG003-data-lovers/blob/main/src/imagenes/Encuestas%202.JPG"/>
+
+##### Planning de Trello
+(https://trello.com/b/yIQaLSft/data-lovers)
 
 ## 3. Historias de Usuarios
 
@@ -36,14 +39,28 @@ Uno de nuestros usuarios no conoce ni tiene la aplicacion de pokemon Go, sin emb
 ##### Usuario 1
 Yo como usuario: Quiero ver que al entrar a la pagina tenga una descripción del contenido de la pagina y al ser un usuario que no he jugado Pokémon Go que me de la facilidad para descargar la app
 
+
+### Criterios de aceptación
+* Que contenga de fondo una imagen de tipo Batalla
+* Que tenga una URL para descargar la aplicación
+* Debe permitir navegar de forma interactiva a través de de una pokeball como botón que lleve a la segunda pantalla
+* Debe ser responsive 
+*** 
 ##### Usuario 2
-Yo como usuario: Quiero que al momento de dar clic a un botón me lleve a una pagina en donde pueda ver todos los Pokémon según numero y poderlo ordenar según su tipo
-
+Yo como usuario: Quiero que al momento de dar clic a un botón me lleve a una pagina en donde pueda ver todos los Pokémon según numero y poderlo ordenar según su tipo.
+### Criterio de aceptación
+* Debe ser responsive
+* Que el menú de la parte superior tenga adicional la opción de regresar a la primer pantalla
+* Que el menú desplegable permita ordenar por tipo de forma ascendente y descendente
+* Que aparezca el nombre de cada pokemon con su respectiva imagen
+***
 ##### Usuario 3
-Como usuario: Quiero que al dar click en el recuadro este muestre una tarjeta emergente de la descripción, esto seria por cada uno de por Pokémon. Adicional pueda ordenarlo por si habilidad.
+Como usuario: Quiero ver una tarjeta que contenga nombre, numero, imagen, tipo, resistencia y debilidades esto seria por cada uno de los Pokémon. Adicional pueda ordenarlo por si habilidad.
+### Criterio de aceptación
+* Crear tarjetas con sus respectivos datos
  
-<img src ="https://github.com/gabiinicial/BOG003-data-lovers/blob/main/src/imagenes/prototipo%20en%20papel.jpg" width= "500px"/>
-
+<img src ="https://github.com/gabiinicial/BOG003-data-lovers/blob/main/src/imagenes/prototipo%20en%20papel.jpg" width="500px"/>
+<img src = " "
 
 
 
