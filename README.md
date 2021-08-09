@@ -42,7 +42,7 @@ Yo como usuario: Quiero que al momento de dar clic a un botón me lleve a una pa
 ##### Usuario 3
 Como usuario: Quiero que al dar click en el recuadro este muestre una tarjeta emergente de la descripción, esto seria por cada uno de por Pokémon. Adicional pueda ordenarlo por si habilidad.
  
-
+<img src ="https://src/imagenes/prototipo en papel.jpg">
 
 
 

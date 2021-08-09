@@ -100,13 +100,12 @@ const callPoke = (datPoke) => {
 
 //funcion que se encarga de realizar las acciones dentro de cada evento
 function changeFunction() {
-
   const type = document.getElementById("type").value;
   const colum = document.getElementById("colum").value;
   const alfabet = document.getElementById("alfabet").value;
-  const filterPoke = filterData(data, type);
+  const filterPoke = filterData(data, type );
   const orderPoke = sortData(filterPoke, colum, alfabet);
-  callPoke(orderPoke);
+  callPoke(orderPoke );
 }
 
 //evento que contendra el filtrado de la data  y el ordenamiento dependiendo de el tipo que se selecione

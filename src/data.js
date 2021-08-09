@@ -1,23 +1,22 @@
-function filterData(data, condition) {
+
+function filterData(data, condition,) {
   let pokemonsFilter = [];
   for (let i = 0; i < data.pokemon.length; i++) {
-
+    if(condition === "all"){
+      pokemonsFilter.push(data.pokemon[i]);
+    }
     for (let types = 0; types < data.pokemon[i].type.length; types++) {
       if (data.pokemon[i].type[types] === condition) {
         pokemonsFilter.push(data.pokemon[i]);
-      }else{
-        if(condition === "all"){
-          pokemonsFilter.push(data.pokemon[i])
-        }
       }
     }
-  }
+      }
   return pokemonsFilter ;
 }
 //funcion (parametros que oredenan con algunos campos y segun las indicaciones)
 function sortData(data, sortBy, sortOrder) {
 
-  let pokemonsOrder = data.slice();
+  let pokemonsOrder = data.slice();// el slice se utilizo para crear un clon de ese arreglo y que no se generara un ciclo sin fin
 
 
   if (sortBy === "num") {
