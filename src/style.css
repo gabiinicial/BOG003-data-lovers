@@ -207,7 +207,7 @@
 
  /* Fondo de Tarjetas */
  #card {
-   background-image: url(imagenes/imgtarg.JPG);
+   background-image: url(imagenes/imgtarg.jpg);
    background-size: cover;
    height: 21.2em;
    width: 12em;
