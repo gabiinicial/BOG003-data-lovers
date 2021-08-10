@@ -7,12 +7,8 @@
 * [2. Definición del producto](#2-Definición-del-producto)
 * [3. Historias de Usuarios](#3-Historias-de-Usuarios)
 * [4. Prototipo de baja Fidelidad](#4-Prototipo-de-baja-Fidelidad)
-* [5. Feedback](#5-Feedback)
-* [6. Prototipo de alta Fidelidad](#6-Prototipo-de-alta-Fidelidad)
-* [7. Consideraciones técnicas](#7-consideraciones-técnicas)
-* [8. Pistas, tips y lecturas complementarias](#8-pistas-tips-y-lecturas-complementarias)
-* [9. Checklist](#9-checklist)
-
+* [5. Prototipo de alta Fidelidad](#5-Prototipo-de-alta-Fidelidad)
+* [6. Test unitario](#6-Test-unitario)
 ***
 
 ## 1. Resumen del Proyecto
@@ -62,10 +58,10 @@ Como usuario: Quiero ver una tarjeta que contenga nombre, numero, imagen, tipo, 
 * Que se muestre estadistica con nivel de resistencia
 ***
 
-## Pototipo en papel
+## 4. Pototipo de baja fidelidad
 <img src ="https://github.com/gabiinicial/BOG003-data-lovers/blob/main/src/imagenes/prototipo%20en%20papel.jpg" width="500px"/>
 
-## Prototipo de alta fidelidad
+## 5. Prototipo de alta fidelidad
 #### Pagina 1 de PC
 <img src = "https://github.com/gabiinicial/BOG003-data-lovers/blob/main/src/imagenes/Figma1.JPG"
 width="500px"/>
@@ -76,8 +72,14 @@ width="500px"/>
 
 #### Pagina 1 de Movil
 <img src = "https://github.com/gabiinicial/BOG003-data-lovers/blob/main/src/imagenes/FigmaCel1.JPG"
-width="500px"/>
+width="300px"/>
 
 #### Pagina 2 de Movil
 <img src= "https://github.com/gabiinicial/BOG003-data-lovers/blob/main/src/imagenes/FigmaCel2.JPG"
-width="500px"/>
+width="300px"/>
+ 
+## 6. Test unitario
+
+Se realizan los test de las tres funcionalidades principales de la pagina.
+
+<img src = "https://github.com/gabiinicial/BOG003-data-lovers/blob/main/src/imagenes/test.png"/>

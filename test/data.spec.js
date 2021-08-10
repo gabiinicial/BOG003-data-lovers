@@ -16,6 +16,12 @@ describe('filterData', () => {
     };
     expect(filterData(filtPokemon, "ice")).toEqual([]);
   });
+  it('retornar `filterData` para "all" devuelveme todos', () => {
+    let filtPokemon = {
+      pokemon: [{"num": "004","name": "charmander" ,"type": ["fire"],},{"num": "005","name": "charmeleon","type": ["fire"],}]
+    };
+    expect(filterData(filtPokemon, "all")).toEqual(filtPokemon["pokemon"]);
+  });
   it('retornar `filterData` para "fire" devuelveme un arreglo ', () => {
     let filtPokemon = {
       pokemon: [{"num": "004","name": "charmander" ,"type": ["fire"],},{"num": "005","name": "charmeleon","type": ["fire"],}]
@@ -74,15 +80,20 @@ describe('computeStats', () => {
   it('is a function', () => {
     expect(typeof computeStats).toBe('function');
   });
+ 
   it('retornar `computeStats` para devolver totalResistant', () => {
     let computeResistan={
-      pokemon:[{"num": "001","name": "bulbasaur","resistant": ["water","electric","grass","fighting","fairy" ], },{"num": "002","name": "ivysaur","resistant": ["water","electric","grass","fighting","fairy"],},{"num": "003","name": "venusaur","resistant": [ "water","electric","grass","fighting","fairy"],},{"num": "216",
+      pokemon:[{"num": "001","name": "bulbasaur","resistant": ["water","electric","grass","fighting","fairy" ], "stats": {
+        "base-attack": "118"}
+  },{"num": "002","name": "ivysaur","resistant": ["water","electric","grass","fighting","fairy"],"stats": {"base-attack": "151"},},{"num": "003","name": "venusaur","resistant": [ "water","electric","grass","fighting","fairy"],"stats": {"base-attack": "198"}},{"num": "216",
       "name": "teddiursa","resistant": [
         "ghost"
-      ],}]
+      ],"stats": {
+        "base-attack": "116"}
+  }]
     }
-    const eunnombre = {"Maxima Resistencia": 75,"Minima Resistencia": 25
+    const porcentage = {"Minimo Ataque": 50,"Maximo Ataque":50,"Maxima Resistencia": 75,"Minima Resistencia": 25
     };
-      expect(computeStats(computeResistan)).toEqual(eunnombre);
+      expect(computeStats(computeResistan)).toEqual(porcentage);
     });
 });

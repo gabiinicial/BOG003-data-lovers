@@ -50,7 +50,6 @@ function computeStats(data) {
   let minR = []
   let maxR = []
   for (let i = 0; i < data.pokemon.length; i++) {
-    const baseAttak = data.pokemon[i].stats["base-attack"]
 
     if (data.pokemon[i].resistant.length <= 3) {
       minR.push(data.pokemon[i]);
@@ -60,10 +59,10 @@ function computeStats(data) {
       }
     }
 
-    if (parseInt(baseAttak) <= 130) {
+    if (parseInt(data.pokemon[i].stats["base-attack"]) <= 130) {
       attackmin.push(data.pokemon[i]);
     } else{
-      if (parseInt(baseAttak) >= 131) {
+      if (parseInt(data.pokemon[i].stats["base-attack"]) >= 131) {
         attackmax.push(data.pokemon[i]);
       }
     }
@@ -87,8 +86,8 @@ function computeStats(data) {
     "Maxima Resistencia": porcentageMax,
     "Minima Resistencia": porcentageMin
   }
-  console.log("el porcentaje min es: " + porcentage.porcentageAttackmin + "/ " + totalAttack);
-  console.log("el porcentaje max es: " + porcentage.porcentageAttackmax + "/ " + totalAttack);
+ /* console.log("el porcentaje min es: " + porcentage.porcentageAttackmin + "/ " + totalAttack);
+  console.log("el porcentaje max es: " + porcentage.porcentageAttackmax + "/ " + totalAttack);*/
   return porcentage;
 }
 /*let computeStatsTwo = (data) =>{
