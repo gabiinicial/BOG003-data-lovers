@@ -58,7 +58,7 @@ Como usuario: Quiero ver una tarjeta que contenga nombre, numero, imagen, tipo, 
 * Que se muestre estadistica con nivel de resistencia
 ***
 
-## 4. Pototipo de baja fidelidad
+## 4. Prototipo de baja fidelidad
 <img src ="https://github.com/gabiinicial/BOG003-data-lovers/blob/main/src/imagenes/prototipo%20en%20papel.jpg" width="500px"/>
 
 ## 5. Prototipo de alta fidelidad
