@@ -9,7 +9,6 @@ import data from './data/pokemon/pokemon.js';
 // import data from './data/lol/lol.js';
 // import data from './data/rickandmorty/rickandmorty.js';
 //Boton descarga la APP
-
 document.getElementById("btngo").addEventListener("click", () => { //opcion que devuelve al inicio de la pagina
   document.getElementById("page2").style.display = 'none';
   document.getElementById("page1").style.display = 'block';
@@ -42,13 +41,12 @@ let span = document.getElementById("mModal")[0];
 document.getElementById("xModal").addEventListener("click", () => {
   span.style.display = "none";
 });
-
-
 // funcion que se trae todos los pokemon
 let datPoke = data.pokemon;
 const callPoke = (datPoke) => {
   document.getElementById("rowCard").innerHTML = ""; //permite que al momento de seleccionar otras opciones los nodos no se sobre pongan
-  //recorrido para traer la data y agregarla
+ 
+ //recorrido para traer la data y agregarla
   datPoke.forEach((e) => {
     let containCard = document.createElement("div");
     containCard.id = "card";
@@ -145,20 +143,3 @@ new Chart (myCanva, {
     }
   }
 });
-/* const imag = document.createElement("img")
-      imag.src = e.img;
-      document.getElementById("rowCard").appendChild(imag);
-
-      const nameT = document.createElement("p");
-      nameT.innerText = e.name + e.num;
-      document.getElementById("rowCard").appendChild(nameT);
-
-      const types = document.createElement("p");
-      types.innerText = e.type;
-      document.getElementById("rowCard").appendChild(types);
-
-      const weaknessesP = document.createElement("p");
-      weaknessesP.innerText = e.weaknesses;
-      document.getElementById("rowCard").appendChild(weaknessesP);
-    });
-  }*/

@@ -90,16 +90,6 @@ function computeStats(data) {
   console.log("el porcentaje max es: " + porcentage.porcentageAttackmax + "/ " + totalAttack);*/
   return porcentage;
 }
-/*let computeStatsTwo = (data) =>{
-  let sumattak= [];
- data.map((dato)=>{
-  
-  
-   sumattak= sumattak + Number(dato.stats["base-attak"]);
-
-});
-return (sumattak /data);*/
-
 
 export {
   filterData,
