@@ -464,7 +464,7 @@
 
  @media only screen and (min-width: 350px) and (max-width: 549px) {
    .sectionOne {
-     background-image: url(/imagenes/FondoMovil.png);
+     background-image: url(imagenes/FondoMovil.png);
    }
 
    .buttonInd {
@@ -518,7 +518,7 @@
 
  @media only screen and (min-width: 250px) and (max-width: 350px) {
    .sectionOne {
-     background-image: url(/imagenes/FondoMovil.png);
+     background-image: url(imagenes/FondoMovil.png);
    }
 
    .buttonInd {
